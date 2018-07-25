@@ -1,0 +1,108 @@
+2018-07-25 at 14:41:48 CST INFO  org.springframework.boot.StartupInfoLogger 50 logStarting - Starting TestApplication on HSHY-394-PC with PID 6960 (D:\workspace\idea\nihao\test\target\classes started by HSHY-394 in D:\workspace\idea\nihao\test)
+2018-07-25 at 14:41:48 CST DEBUG org.springframework.boot.StartupInfoLogger 53 logStarting - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-07-25 at 14:41:48 CST INFO  org.springframework.boot.SpringApplication 659 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2018-07-25 at 14:41:48 CST DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator 89 buildExpressionFactory - Loaded expression factory via original TCCL
+2018-07-25 at 14:41:48 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 578 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-07-25 at 14:41:48 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 579 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-07-25 at 14:41:48 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 580 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-07-25 at 14:41:48 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 581 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-07-25 at 14:41:48 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 582 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-07-25 at 14:41:49 CST DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$AutoConfiguredMapperScannerRegistrar 161 registerBeanDefinitions - Searching for mappers annotated with @Mapper'
+2018-07-25 at 14:41:49 CST DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$AutoConfiguredMapperScannerRegistrar 172 registerBeanDefinitions - Using auto-configuration base package 'com.example.hsjy.test'
+2018-07-25 at 14:41:49 CST DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 437 scanCandidateComponents - Identified candidate component class: file [D:\workspace\idea\nihao\test\target\classes\com\example\hsjy\test\dao\PersonDao.class]
+2018-07-25 at 14:41:49 CST DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 181 processBeanDefinitions - Creating MapperFactoryBean with name 'personDao' and 'com.example.hsjy.test.dao.PersonDao' mapperInterface
+2018-07-25 at 14:41:49 CST DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 217 processBeanDefinitions - Enabling autowire by type for MapperFactoryBean with name 'personDao'.
+2018-07-25 at 14:41:50 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - Initializing ProtocolHandler ["http-nio-8001"]
+2018-07-25 at 14:41:50 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - Starting service [Tomcat]
+2018-07-25 at 14:41:50 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-25 at 14:41:50 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Java\jdk1.8.0_172\bin;C:\Program Files (x86)\Java\jdk1.8.0_172\jre\bin;D:\software\maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;D:\software\node\;D:\software\git\Git\cmd;D:\software\tomcat\apache-tomcat-8.5.32-windows-x64\apache-tomcat-8.5.32\bin;D:\software\nginx\nginx-1.12.2\nginx-1.12.2;C:\Users\HSHY-394\AppData\Local\Microsoft\WindowsApps;D:\software\node\node_global;;.]
+2018-07-25 at 14:41:50 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - Initializing Spring embedded WebApplicationContext
+2018-07-25 at 14:41:50 CST DEBUG com.zaxxer.hikari.HikariConfig 495 setDriverClassName - Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@9c764d
+2018-07-25 at 14:41:50 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-07-25 at 14:41:50 CST DEBUG org.mybatis.spring.SqlSessionFactoryBean 411 buildSqlSessionFactory - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+2018-07-25 at 14:41:50 CST DEBUG org.apache.ibatis.io.VFS 84 getInstance - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2018-07-25 at 14:41:50 CST DEBUG org.apache.ibatis.io.ResolverUtil 256 addIfMatching - Checking to see if class com.example.hsjy.test.entity.Person matches criteria [is assignable to Object]
+2018-07-25 at 14:41:50 CST DEBUG org.mybatis.spring.SqlSessionFactoryBean 436 buildSqlSessionFactory - Scanned package: 'com.example.hsjy.test.entity' for aliases
+2018-07-25 at 14:41:50 CST DEBUG org.mybatis.spring.SqlSessionFactoryBean 528 buildSqlSessionFactory - Parsed mapper file: 'file [D:\workspace\idea\nihao\test\target\classes\mapping\PersonDao.xml]'
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers 60 getDefault - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator 89 buildExpressionFactory - Loaded expression factory via original TCCL
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers 60 getDefault - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl 148 messageInterpolator - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl 180 constraintValidatorFactory - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl 194 parameterNameProvider - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser 133 getValidationXmlInputStream - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper 53 getResettableInputStreamForPath - Trying to load META-INF/validation.xml via user class loader
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper 60 getResettableInputStreamForPath - Trying to load META-INF/validation.xml via TCCL
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper 66 getResettableInputStreamForPath - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-07-25 at 14:41:50 CST DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser 140 getValidationXmlInputStream - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-07-25 at 14:41:51 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 578 logValidatorFactoryScopedConfiguration - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2018-07-25 at 14:41:51 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 579 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2018-07-25 at 14:41:51 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 580 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2018-07-25 at 14:41:51 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 581 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2018-07-25 at 14:41:51 CST DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl 582 logValidatorFactoryScopedConfiguration - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2018-07-25 at 14:41:51 CST DEBUG org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration 209 afterPropertiesSet - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2018-07-25 at 14:41:51 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - Starting ProtocolHandler ["http-nio-8001"]
+2018-07-25 at 14:41:51 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - Using a shared selector for servlet write/read
+2018-07-25 at 14:41:51 CST INFO  org.springframework.boot.StartupInfoLogger 59 logStarted - Started TestApplication in 3.598 seconds (JVM running for 4.704)
+2018-07-25 at 14:41:58 CST INFO  org.apache.juli.logging.DirectJDKLog 180 log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 at 14:41:58 CST INFO  com.example.hsjy.test.controller.PersonController 40 getAlls - 你会在哪啊  
+2018-07-25 at 14:41:58 CST DEBUG com.example.hsjy.test.controller.PersonController 42 getAlls - debug日志。。
+2018-07-25 at 14:41:58 CST INFO  com.example.hsjy.test.controller.PersonController 45 getAlls - info日志。。。
+2018-07-25 at 14:41:58 CST DEBUG org.mybatis.spring.SqlSessionUtils 99 getSqlSession - Creating a new SqlSession
+2018-07-25 at 14:41:58 CST DEBUG org.mybatis.spring.SqlSessionUtils 150 registerSessionHolder - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1983baa] was not registered for synchronization because synchronization is not active
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1119 logConfiguration - HikariPool-1 - configuration:
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - allowPoolSuspension.............false
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - autoCommit......................true
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - catalog.........................none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - connectionInitSql...............none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - connectionTestQuery.............none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - connectionTimeout...............30000
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - dataSource......................none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - dataSourceClassName.............none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - dataSourceJNDI..................none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - dataSourceProperties............{password=<masked>}
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - driverClassName................."com.mysql.jdbc.Driver"
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - healthCheckProperties...........{}
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - healthCheckRegistry.............none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - idleTimeout.....................600000
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - initializationFailFast..........true
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - initializationFailTimeout.......1
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - isolateInternalQueries..........false
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - jdbc4ConnectionTest.............false
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - jdbcUrl.........................jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - leakDetectionThreshold..........0
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - maxLifetime.....................1800000
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - maximumPoolSize.................10
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - metricRegistry..................none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - metricsTrackerFactory...........none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - minimumIdle.....................10
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - password........................<masked>
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - poolName........................"HikariPool-1"
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - readOnly........................false
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - registerMbeans..................false
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - scheduledExecutor...............none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - scheduledExecutorService........internal
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - schema..........................none
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - threadFactory...................internal
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - transactionIsolation............default
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - username........................"root"
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.HikariConfig 1151 logConfiguration - validationTimeout...............5000
+2018-07-25 at 14:41:58 CST INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-1 - Starting...
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool 538 checkFailFast - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@babfe
+2018-07-25 at 14:41:58 CST INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-1 - Start completed.
+2018-07-25 at 14:41:58 CST DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 89 openConnection - JDBC Connection [HikariProxyConnection@30750237 wrapping com.mysql.jdbc.JDBC4Connection@babfe] will not be managed by Spring
+2018-07-25 at 14:41:58 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT * from person 
+2018-07-25 at 14:41:58 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2018-07-25 at 14:41:58 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2018-07-25 at 14:41:58 CST DEBUG org.mybatis.spring.SqlSessionUtils 193 closeSqlSession - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1983baa]
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool 404 logPoolState - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@190c01a
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1bf3f55
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@8c6f83
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@160ef24
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4cfd2c
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@195d5da
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@18a65c3
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1e16715
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 702 call - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6fbba0
+2018-07-25 at 14:41:58 CST DEBUG com.zaxxer.hikari.pool.HikariPool 404 logPoolState - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
