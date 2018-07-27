@@ -1,11 +1,14 @@
 package com.example.hsjy.test.entity;
 
+import java.util.List;
+
 public class Person {
     private String id;
     private String name ;
     private int age;
     private String status;
 
+    private List<String> list;
     @Override
     public String toString() {
         return "Person{" +
