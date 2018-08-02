@@ -1,26 +1,20 @@
 package com.example.hsjy.test.json;
 
+import com.example.hsjy.test.entity.Person;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
-import org.assertj.core.util.Sets;
-import org.junit.Test;
-import com.example.hsjy.test.entity.Person;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.PathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.core.io.WritableResource;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.Set;
 
 /**
  * @ProjectName: test
@@ -35,7 +29,7 @@ import java.util.Set;
  * @Version: 1.0
  */
 public class JsonTest {
-    @Test
+
     public  void testJson() throws JsonProcessingException {/*
         Person person = new Person("e","qina");
         System.out.println(setupJsonFilter().writeValueAsString(person));
@@ -70,7 +64,6 @@ public class JsonTest {
         System.out.println(constructor[0].getParameters());
     }
 
-    @Test
     public  void fileClassloader() throws IOException, ClassNotFoundException {
         Resource pathResource = new ClassPathResource("file/file.txt");
         InputStream stream = pathResource.getInputStream();

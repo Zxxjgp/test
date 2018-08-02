@@ -1,5 +1,6 @@
 package com.example.hsjy.test.entity;
 
+
 public class Student {
 
     /** 学号 */

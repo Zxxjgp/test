@@ -5,6 +5,7 @@ import com.example.hsjy.test.entity.Student;
 import com.example.hsjy.test.service.PersonService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -37,6 +38,15 @@ import java.util.Optional;
 @RequestMapping("person")
 public class PersonController {
     Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Value("#{'大人的世界你好'}")
+    private  String name;
+   // @Value("${spring.datasource.driver-class-name}")
+   // @Value("${medate}")
+    @Value("#{testValue.name}")
+    //@Value("${medate}")
+    private String jdbcUrl;
+
 
     @Resource
     private PersonService personService;
@@ -77,5 +87,12 @@ public class PersonController {
 
         //获取文件名
         String fileName = filpath.substring(filpath.lastIndexOf('\\')+1);
+    }
+
+    @RequestMapping("ht")
+    @ResponseBody
+    public String getValue(){
+
+        return jdbcUrl;
     }
 }
