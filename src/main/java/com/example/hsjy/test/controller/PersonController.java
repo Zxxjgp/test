@@ -5,13 +5,11 @@ import com.example.hsjy.test.entity.Student;
 import com.example.hsjy.test.service.PersonService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -20,22 +18,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * @ProjectName: test
- * @Package: com.example.hsjy.test.controller
- * @ClassName: PersonController
- * @Description: java类作用描述
- * @Author: 焦关平
- * @CreateDate: 2018/7/25 13:44
- * @UpdateUser: 更新者
- * @UpdateDate: 2018/7/25 13:44
- * @UpdateRemark: 更新说明
- * @Version: 1.0
- */
-
-@Controller
-@EnableAutoConfiguration
+@RestController
 @RequestMapping("person")
+
 public class PersonController {
     Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -49,6 +34,7 @@ public class PersonController {
 
 
     @Resource
+
     private PersonService personService;
 
     @RequestMapping(value = "list",  method = RequestMethod.GET)
@@ -57,7 +43,6 @@ public class PersonController {
         return mv;
     }
     @RequestMapping("rr")
-    @ResponseBody
     public List<Person> getAlls(){
         logger.info("你会在哪啊  ");
         logger.trace("trace日志。。");
@@ -79,6 +64,7 @@ public class PersonController {
         System.out.println(de.getName());
         return null;
     }
+
 
     @RequestMapping("fileupload")
     public  void  testFileLoadFile(HttpServletRequest httpServletRequest, MultipartHttpServletRequest multipartHttpServletRequest){

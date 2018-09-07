@@ -1,10 +1,13 @@
 package com.example.hsjy.test.controller
 
 import com.example.hsjy.test.entity.Person
+import com.example.hsjy.test.entity.Stu
+import com.example.hsjy.test.entity.TestStu
 import com.example.hsjy.test.service.BlogService
+import com.example.hsjy.test.utils.HttpUtils
+import com.example.hsjy.test.utils.Post
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import sun.security.provider.certpath.OCSPResponse
 import javax.annotation.Resource
 
 /**
@@ -29,4 +32,22 @@ class BlogController {
 
     @RequestMapping("list")
     fun findList() :List<Person> = blogService.finAll()
+    @RequestMapping("kotlib")
+    fun findKotlin() : Stu {
+        var g = Stu()
+        g.code = "789456"
+        g.g = "你的生活GG了"
+
+        val h = TestStu()
+        h.age = "25"
+        h.name = "焦关平"
+        val copy = h.copy()
+        println(copy.age+h.name )
+
+        val doGet = HttpUtils.doGet("https://blog.csdn.net/chinoukin/article/details/78259646")
+        var k =HttpUtils.doPost("https://www.baidu.com","nihao")
+        println(k)
+        return g
+    }
+
 }
