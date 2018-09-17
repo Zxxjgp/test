@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hsjy.test.dao.BlogArticleDao">
+    <resultMap id="PersonMap" type="com.example.hsjy.test.entity.BlogArticle">
+        <id column="id" property="id"/>
+        <result column="title" property="title"  />
+        <result column="content" property="content" />
+        <result column="createBy" property="createBy" />
+        <result column="createTime" property="createTime" />
+    </resultMap>
+    <select id="articleList" resultMap="PersonMap" parameterType="Person">
+       SELECT * from blog_article
+   </select>
+    <insert id="save" parameterType="com.example.hsjy.test.entity.BlogArticle">
+        insert into blog_article(
+        <if test="id != null and id != ''">id,</if>
+        <if test="title != null and title != ''">title,</if>
+        <if test="content != null and content != ''">content,</if>
+        <if test="createBy != null and createBy != ''">create_by,</if>
+        create_time
+        )
+        values (
+        <if test="id != null and id != ''">#{id},</if>
+        <if test="title != null and title != ''">#{title},</if>
+        <if test="content != null and content != ''">#{content},</if>
+        <if test="createBy != null and createBy != ''">#{createBy},</if>
+        sysdate()
+        )
+    </insert>
+</mapper>

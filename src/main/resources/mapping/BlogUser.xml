@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hsjy.test.dao.BlogUserDao">
+    <resultMap id="PersonMap" type="com.example.hsjy.test.entity.BlogUser">
+        <id column="id" property="id"/>
+        <result column="login_name" property="loginName"  />
+        <result column="password" property="password"  />
+
+        <result column="disabled" property="disabled" />
+        <result column="name" property="name" />
+        <result column="email" property="email" />
+        <result column="phone" property="phone" />
+        <result column="mobile" property="mobile" />
+        <result column="login_ip" property="loginIp" />
+        <result column="create_by" property="createBy" />
+    </resultMap>
+    <select id="getBlogUserInfo" resultMap="PersonMap" parameterType="String">
+       SELECT * from blog_user
+       <where>
+           <if test="_parameter != '' and _parameter !=null">
+                id = #{_parameter}
+           </if>
+       </where>
+   </select>
+</mapper>
