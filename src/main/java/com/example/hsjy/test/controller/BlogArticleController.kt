@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.annotation.Resource
+import javax.servlet.http.HttpServletRequest
 
 /**
  *
@@ -62,4 +63,45 @@ class BlogArticleController {
         return "index"
     }
 
+    @RequestMapping("reqGet")
+    @ResponseBody
+    fun getRequest(request: HttpServletRequest) : String{
+        println(request.getHeader("User-Agent").toLowerCase())
+        println(getBrowserName(request.getHeader("User-Agent").toLowerCase()))
+        println(request.requestURI)
+        println(request.servletPath)
+        println("start"+request.serverName+"end")
+        println(request.serverPort)
+        println(request.remoteHost)
+        println(request.remoteAddr)
+        println(request.remoteUser)
+        println(request.remotePort)
+        return "啊哈哈我已经成功了"
+    }
+
+    fun getBrowserName(agent: String): String {
+        return if (agent.indexOf("msie 7") > 0) {
+            "ie7"
+        } else if (agent.indexOf("msie 8") > 0) {
+            "ie8"
+        } else if (agent.indexOf("msie 9") > 0) {
+            "ie9"
+        } else if (agent.indexOf("msie 10") > 0) {
+            "ie10"
+        } else if (agent.indexOf("msie") > 0) {
+            "ie"
+        } else if (agent.indexOf("opera") > 0) {
+            "opera"
+        } else if (agent.indexOf("opera") > 0) {
+            "opera"
+        } else if (agent.indexOf("firefox") > 0) {
+            "firefox"
+        } else if (agent.indexOf("chrome") > 0) {
+            "chrome"
+        } else if (agent.indexOf("gecko") > 0 && agent.indexOf("rv:11") > 0) {
+            "ie11"
+        } else {
+            "Others"
+        }
+    }
 }

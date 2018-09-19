@@ -71,11 +71,21 @@ public class DateUtils {
         return new Date();
     }
 
+    /**
+     * 将date类型转换为string
+     * @param date
+     * @return
+     */
     public static String dateConvertString(Date date){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return simpleDateFormat.format(date);
     }
 
+    /**
+     * 将date类型的转换为时间戳
+     * @param date
+     * @return
+     */
     public static long dateConvertTimestamps(Date date){
         long timestamps = date.getTime();
         Long lg = new Long(timestamps);
@@ -83,5 +93,9 @@ public class DateUtils {
             return timestamps * 1000;
         }
         return timestamps;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
