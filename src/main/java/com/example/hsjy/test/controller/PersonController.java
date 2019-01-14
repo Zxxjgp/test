@@ -64,7 +64,11 @@ public class PersonController {
         System.out.println(de.getName());
         return null;
     }
-
+    
+    @RequestMapping("ffff")
+    public String ffff(){
+        return "ewrewrewrew";
+    }
 
     @RequestMapping("fileupload")
     public  void  testFileLoadFile(HttpServletRequest httpServletRequest, MultipartHttpServletRequest multipartHttpServletRequest){
